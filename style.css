@@ -12,6 +12,7 @@ body{
 font-size: 20px;
 color: #E96D71;
 margin: 10px 0;
+border-bottom:1px solid rgba(255, 180, 180, 0.404);
 }
 nav{
     display: flex;
@@ -48,9 +49,10 @@ nav{
 }
 .currency,input{
   font-size: 1rem;
-  padding: 0.5rem;
+  padding: 0.8rem;
 }
 input{
+    border-radius: 0 10px;
     border: none
 }
 img{
@@ -66,18 +68,21 @@ img:hover{
     background-color: transparent;
     border: none;
     cursor: pointer;
-    padding: 0.1rem;
-    margin-right: 10px;
+   
 }
 @media (max-width:440px) {
         .currency,input{
             font-size: 0.8rem;
-            padding: 18px;
+            padding: 10px;
+          }
+          input{
+            border-radius: 0 10px;
           }
           .currency-container{
             background-color: #FAD7A1;
             padding: 30px;
         }
+       
         img{
             margin: 20px 0;
             width: 40px;
@@ -88,4 +93,26 @@ img:hover{
             margin: 20px 0;
             }
     
+  }
+  @media (max-width:340px) {
+    .currency,input{
+        font-size: 0.8rem;
+        padding: 9px;
+      }
+      input{
+        border-radius: 0 10px;
+      }
+      .currency-container{
+        background-color: #FAD7A1;
+        padding: 25px;
+    }
+    img{
+        margin: 20px 0;
+        width: 35px;
+    }
+    .date{
+        font-size: 13px;
+        color: #E96D71;
+        margin: 20px 0;
+        }
   }
