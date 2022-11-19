@@ -12,7 +12,7 @@ body{
 font-size: 20px;
 color: #E96D71;
 margin: 10px 0;
-border-bottom:1px solid rgba(255, 180, 180, 0.404);
+border-bottom:2px solid rgba(255, 180, 180, 0.404);
 }
 nav{
     display: flex;
