@@ -17,14 +17,14 @@ ${today}<span>/</span>${month}<span>/</span>${year}
 //Calulation and Fetch API
 //API Key
 //a8bfbe05a290eb5d20afa167
-function calculate(){
+async function calculate(){
     const currencyOneValue = currencyOne.value;
     const currencyTwoValue = currencyTwo.value;
-    fetch(`https://v6.exchangerate-api.com/v6/a8bfbe05a290eb5d20afa167/latest/${currencyOneValue}`)
+   await fetch(`https://v6.exchangerate-api.com/v6/a8bfbe05a290eb5d20afa167/latest/${currencyOneValue}`)
     .then(res=>res.json())
     .then(data=>{
         const rates = data.conversion_rates[currencyTwoValue];
-        currencyTwoInput.value=(currencyOneInput.value*rates).toFixed(2);
+     currencyTwoInput.value=(currencyOneInput.value*rates).toFixed(2);
     })
 }
 //Shuffle
