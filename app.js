@@ -8,7 +8,7 @@ const shuffle = document.querySelector('#shuffle')
 function dateUpdated(){
     let date = new Date()
     let today = date.getDate()
-    let month = date.getMonth()
+    let month = date.getMonth()+1;
     let year = date.getFullYear()
 updateDate.innerHTML=`
 ${today}<span>/</span>${month}<span>/</span>${year}
